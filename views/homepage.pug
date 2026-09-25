@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Pets
+        a(href="/update-cobj") Add to this table
+        table
+            thead
+                tr
+                    th Name
+                    th Species
+                    th Bio
+                    th Age
+                    th Favorite Food
+                    th Favorite Toy
+                    th Favorite Activity
+                    th Owner Name
+                    th Owner Email
+            tbody
+                each pet in pets
+                    tr
+                        td= pet.properties.name
+                        td= pet.properties.species
+                        td= pet.properties.bio
+                        td= pet.properties.age
+                        td= pet.properties.favorite_food
+                        td= pet.properties.favorite_toy
+                        td= pet.properties.favorite_activity
+                        td= pet.properties.owner_name
+                        td= pet.properties.owner_email
