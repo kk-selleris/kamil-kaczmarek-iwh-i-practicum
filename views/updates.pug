@@ -1,0 +1,28 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Add a Pet
+        form.form-wrapper(action="/update-cobj" method="POST")
+            label(for="name") Name
+            input(type="text" id="name" name="name" required)
+            label(for="species") Species
+            input(type="text" id="species" name="species")
+            label(for="bio") Bio
+            input(type="text" id="bio" name="bio")
+            label(for="age") Age
+            input(type="number" id="age" name="age")
+            label(for="favorite_food") Favorite Food
+            input(type="text" id="favorite_food" name="favorite_food")
+            label(for="favorite_toy") Favorite Toy
+            input(type="text" id="favorite_toy" name="favorite_toy")
+            label(for="favorite_activity") Favorite Activity
+            input(type="text" id="favorite_activity" name="favorite_activity")
+            label(for="owner_name") Owner Name
+            input(type="text" id="owner_name" name="owner_name")
+            label(for="owner_email") Owner Email
+            input(type="email" id="owner_email" name="owner_email")
+            input(type="submit" value="Create Pet")
+        a(href="/") Return to the homepage
