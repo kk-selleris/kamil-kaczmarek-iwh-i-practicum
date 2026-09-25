@@ -5,7 +5,7 @@ html
         link(rel="stylesheet", href="/css/style.css")
     body
         h1 Add a Pet
-        form(action="/update-cobj" method="POST")
+        form.form-wrapper(action="/update-cobj" method="POST")
             label(for="name") Name
             input(type="text" id="name" name="name" required)
             label(for="species") Species
